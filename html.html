@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<title> Tic-Tac-Toe </title>    
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript" charset="utf-8"></script>  
+<link type="text/css" rel="stylesheet" href="style.css" />     
+<script>
+$(document).ready(function(){
+  // jQuery code goes here  
+  $("td").click(function() {
+   if($(this).children().length == 0) { 
+
+    $(this).append('<img  style="display:block;" width="100%" height="100%" src="x.png">')
+  }
+
+  })
+});
+</script>      
+</head>
+<body>
+
+<table id='board'>
+  <tr>
+    <td id="1a"> 
+     </td><td id="1b"></td><td id="1c"></td>
+  </tr>
+  <tr>
+    <td id="2a"></td><td id="2b"></td><td id="2c"></td>
+  </tr>
+  <tr>
+    <td id="3a"></td><td id="3b"></td><td id="3c"></td>
+  </tr>
+</table>
+             
+</body>  
+
+</html>
